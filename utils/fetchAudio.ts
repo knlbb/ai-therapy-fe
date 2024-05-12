@@ -4,5 +4,5 @@ export const fetchAudio = async (text:string) => {
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({text}),
     })
-    return await response.blob()
+    return await response
 }
